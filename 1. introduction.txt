@@ -1,0 +1,4 @@
+before the arrival of the frameworks like spring and spring boot, we had servlets and servlet container 
+these were the foundations for building web applications 
+servlet is a java class which handles the client request, process it and return the response 
+servlet container are the ones which manages the servlets 
