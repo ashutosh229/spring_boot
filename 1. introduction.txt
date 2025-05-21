@@ -11,6 +11,13 @@ then the input request is routed to the particular servlet
 then the response is triggered from the servlet to the container 
 then the container fires the response to the client 
 
+web.xml file contains the servlet mapping and other sort of configurations for the servlets 
+servlet mapping configures for the servlets which endpoint should be used where 
+
+servlets had a lot of problems which were becoming burden in the path of web applications development
+to solve these problems, the spring framework came into the picture 
+
+
 
 
 
