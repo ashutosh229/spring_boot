@@ -4,4 +4,13 @@ servlet is a java class which handles the client request, process it and return 
 there are multiple servlets and we need someone which can manage all these servlets 
 servlet container are the ones which manages the servlets
 
+working of the servelet technology:
+input request goes to the servlet container 
+it uses the web.xml file to find the servlet which should be used to serve the request 
+then the input request is routed to the particular servlet 
+then the response is triggered from the servlet to the container 
+then the container fires the response to the client 
+
+
+
 
