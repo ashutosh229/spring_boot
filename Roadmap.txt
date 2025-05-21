@@ -1,0 +1,24 @@
+1. Introduction to spring boot:
+    -what problem it solves
+    -its features and advantages 
+2. setting up the initial spring boot project:
+    -understanding the layered architecture 
+3. understanding the maven pom.xml or gradle structure 
+4. spring boot annotations 
+5. dependency injection and beans 
+6. data access:
+    -JPA
+    -JDBC 
+    -Query method 
+7. Restful APIs design with spring boot 
+8. Security principles:
+    -authentication 
+    -authorization 
+9. logging 
+10. exception handling 
+11. caching 
+12. interceptor 
+13. scheduling 
+14. unit testing (mockito)
+15. microservices (a lot of topics)
+16. project
