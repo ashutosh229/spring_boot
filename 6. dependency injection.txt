@@ -7,7 +7,24 @@ for e.g., if we create the object for a computer, it should have the object of t
 therefore, the computer object is dependent on these other objects
 this is called object dependency and its management is called the dependency management
 dependency management is one of the most important aspects in any object oriented application because for the application
-to work properly, it is important that the objects are well managed  
+to work properly, it is important that the objects are well managed
+dependency injection is one of the most important steps in the management
+
+
+current issues and need for the dependency injection:
+1. both the objects will be tightly coupled:
+-if in th future, some changes occurs in the independent object's class then the codebase for the dependent object's 
+class has to be altered 
+-as the system scales up and changes becomes frequent, it becomes diffult to make frequent alterations and therefore difficult
+to create and manage the objects and their dependencies 
+-dependency management becomes tough then 
+
+2. violation of the D(Dependency Inversion) rule from the SOLID principles:
+-if we define and initialize the concrete implementation of the independent classes in the dependent class, 
+for the purpose of dependency management, it will not follow abstraction and follow the concreteness and therefore breaks the D rule 
+-for the D rule to follow, we need to follow abstraction rather than direct initialization as the state and therefore inject 
+the created object into the independent class object, as the state, when the object is created 
+
 
 manual dependency management: 
 in the manual way, the developer creates the objects manually using the new keyboard (both the independent and the dependent objects)
@@ -16,6 +33,7 @@ then runs the application code where all the dependencies are now well managed a
 the flow of control was from the developer who creates, injects and manages the objects, to the application which runs 
 after the process is done 
 this is called the manual control or the regular control
+
 
 automatic/autoconfigured dependency management:
 this is also called the dependency injection 
@@ -26,7 +44,6 @@ the flow of control is that the application creates, injects and manages the obj
 objects in the application and run it 
 since the control flow is inverted than the manual, it is also called the inversion of control
 
-inversion of control or IOC is one of the most important features of the spring boot framework
 
 the dependency injection (manual and IOC) can take place in two ways:
 1. property injection: 
