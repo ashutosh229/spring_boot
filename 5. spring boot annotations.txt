@@ -1,0 +1,8 @@
+springbootapplication: used to create a spring boost application in the entry file of the application
+
+controller: used to create the controller classes 
+
+restcontroller: used to create the controller classes with minimal configurations because the extra configurations are managed 
+by the other annotations in the controller class. this provides some extra to the controller annotation 
+
+responsebody: declares a method inside the controller class which returns the responsebody on firing of the route 
