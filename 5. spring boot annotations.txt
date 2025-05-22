@@ -32,6 +32,10 @@ same sort of type conversion occurs here
 requestbody: handles the body of the request,generally in the form of json, and converts it into the java object whose class
 will be defined in the application 
 
+responseEntity: represents the entire HTTP response structure containing the status code, body, headers, etc. 
+
+
+
 
 
 
