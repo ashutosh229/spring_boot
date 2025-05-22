@@ -1,0 +1,4 @@
+there are many ways of creating a spring boot application 
+out of the ways, using the spring initializer application is the most straight forward way 
+
+the project structure for the spring boot application:
