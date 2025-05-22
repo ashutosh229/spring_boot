@@ -34,9 +34,15 @@ code itself by the different type of annotations available
 -concepts like dependency injection makes life easy
 
 4. difficult to manage rest apis in case of servlets:
--for the servlets, writing the APIs is difficult as we can put only one get,put,delete and other type of request types in a servlet 
+-for the servlets, writing the APIs is difficult as we can put only one get,put,delete and other type of HTTP methods in a servlet 
 -and since we have the large number of end points to handle, we have to use if-else conditions inside the servlets 
--
+-handling things like request parameters, path mapping, query parameters and others, etc. becomes difficult in servlets 
+
+5. other issues:
+-spring framework solves other issues like integration with other technologies, securitty concerns, etc and makes 
+life easier for the developers 
+
+
 
 
 
