@@ -41,7 +41,16 @@ by the spring IOC container
 above 
 -other methods includes java configuration or writing XML files but these are not needed for now 
 
-how to create the container and ask for the creation of the independent object:
+how to create the container for IOC:
+-see the code for the reference 
+-after the creation of the container, we have all the objects in it which are beans 
+
+how to get the bean from the container:
+-see the code for the reference
+-we use the getBean() method for getting the bean from the container 
+-after getting the bean, we can use it 
+
+
 
 
 

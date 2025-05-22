@@ -9,4 +9,5 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "com.example.demo")
 public class App {
     ApplicationContext container = new AnnotationConfigApplicationContext(App.class);
+    Computer computer = container.getBean(Computer.class);
 }
