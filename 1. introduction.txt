@@ -41,6 +41,11 @@ code itself by the different type of annotations available
 5. other issues:
 -spring framework solves other issues like integration with other technologies, securitty concerns, etc and makes 
 life easier for the developers 
+-unit testing framework like mockito or junit gets easily integrated into the spring, 
+data access frameworks hibernate,JDBC,JPA, etc., 
+integration with async programming 
+integrations with caching, messaging, security 
+
 
 
 
