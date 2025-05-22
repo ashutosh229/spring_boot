@@ -13,7 +13,18 @@ when the application runs
 -we write this annotation for the setter function inside the dependent class which is responsible for injecting 
 the independent objects into the dependent one 
 -by writing this annotation, the IOC container gets to know, that when the application code runs, its need to automatically 
-inject the object dependcies using this setter function 
+inject the object dependcies using this setter function
+
+-@configuration:
+-we write this annotation for the class which we want to make the spring bean configuration class for the application.
+-we inject this class into the context while creating the spring IOC containe 
+-when the application code runs and the container is created, it looks for the injected class which is marked with the configuration annotation 
+-looks for the class and finds the component scan annotation which has the mention of the package from which the objects 
+should be created into the IOC container 
+-looks into the component scan annotation and finds the mentioned package, creates all the objects which are marked in the 
+package with the component annotation into the IOC container 
+-while creating the objects, it also looks for the dependencies and also resolves the dependencies automatically 
+using the setter function, annotated by the autowired annotation
 
 how to create the container and ask for the creation of the independent object:
 -
