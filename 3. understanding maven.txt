@@ -16,6 +16,8 @@ understanding the project structure created by maven:
 done 
 
 understanding the pom.xml structure:
+done in the pom.xml file in the form of comments 
+
 
 
 
