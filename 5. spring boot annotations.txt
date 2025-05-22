@@ -6,3 +6,28 @@ restcontroller: used to create the controller classes with minimal configuration
 by the other annotations in the controller class. this provides some extra to the controller annotation 
 
 responsebody: declares a method inside the controller class which returns the responsebody on firing of the route 
+
+requestmapping: defines the request configurations which should be accepted by the controller method 
+
+requestparam: used to bind the request parameters in the request end point to the controller method 
+the request parameters in the api endpoint are generally considered as string types 
+we may need to access the parameters as some other type as well like int or float
+the spring boot framework automatically performs the type conversion to the specified type in the controller 
+method from the string type of the provided parameters
+the types can be:
+primitive 
+wrapper classes 
+string(by default)
+enums
+
+type conversion of the above mentioned types from the string type of the request parameters is easy because they are 
+the in built or the defined types in java
+if we want to convert the string type parameter in the request to some custom object type which we want (like date or something like that),
+we need to use the PropertyEditor 
+
+
+
+
+
+
+
