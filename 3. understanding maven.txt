@@ -4,3 +4,9 @@ management like documentation, dependency resolution, build generation, etc.
 
 maven works on the POM (Project Object Model)
 
+just like as for running the npm command in node system, we have to look for the package.json file in the current directory, 
+in the same way, when the mvn command is run in the current directory for the spring boot application, it looks for the 
+pom.xml file and on getting the file, it fetches the configuration from there 
+
+
+
