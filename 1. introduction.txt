@@ -33,7 +33,10 @@ code itself by the different type of annotations available
 -object creation depends on servlet which makes the unit testing process tough since we now cannot mock 
 -concepts like dependency injection makes life easy
 
-
+4. difficult to manage rest apis in case of servlets:
+-for the servlets, writing the APIs is difficult as we can put only one get,put,delete and other type of request types in a servlet 
+-and since we have the large number of end points to handle, we have to use if-else conditions inside the servlets 
+-
 
 
 
