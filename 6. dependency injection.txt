@@ -72,5 +72,12 @@ independent object
 -we dont put the autowired annotation for the constructor
 -we simply define the state without the autowired annotation 
 
+advantages and disadvantages of the above mentioned types and their details:
+bmp 
+
+issues with the dependency injection concept and their solutions:
+bmp
+
+
 
 
