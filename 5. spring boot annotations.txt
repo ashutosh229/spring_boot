@@ -23,7 +23,13 @@ enums
 type conversion of the above mentioned types from the string type of the request parameters is easy because they are 
 the in built or the defined types in java
 if we want to convert the string type parameter in the request to some custom object type which we want (like date or something like that),
-we need to use the PropertyEditor 
+we need to use the PropertyEditor
+how to use the PropertyEditor? (bmp)
+
+
+
+
+
 
 
 
