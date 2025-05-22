@@ -1,0 +1,6 @@
+just like the Vite or CRA in js applications, we have the maven for the spring boot application
+it is not just a build management tool used for build generation but it is used for different other purposes in project 
+management like documentation, dependency resolution, build generation, etc. 
+
+maven works on the POM (Project Object Model)
+
