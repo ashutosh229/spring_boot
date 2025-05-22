@@ -1,0 +1,19 @@
+spring IOC container:
+-this is the entity which is present in the spring framework and its responsible for creating and managing the objects 
+-in short, this is responsible for the IOC part of the spring framework
+-assume it like a container which contains all the objects 
+
+annotations used while implementing IOC using the spring IOC container:
+-@Component: 
+-we write this annotation for the classes whose objects we want to automatically create in the spring IOC container 
+when the application runs 
+ 
+-@Autowired:
+-we write this annotation for the setter function inside the dependent class which is responsible for injecting 
+the independent objects into the dependent one 
+-by writing this annotation, the IOC container gets to know, that when the application code runs, its need to automatically 
+inject the object dependcies using this setter function 
+
+
+
+
