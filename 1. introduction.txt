@@ -49,12 +49,10 @@ integrations with caching, messaging, security
 working of the spring framework / spring MVC : 
 bmp 
 
-pom.xml is the configuration file for the spring application, analogous to the package.json file in js applications 
-
 spring boot framework solves a lot of problems which are there in the spring mvc framework:
 1. dependency management:
--as in the spring mvc framework, we write all the dependencies and their versions in the pom.xml file, it is very 
-difficult for us to manage all these dependencies with their exact versions 
+-as in the spring mvc framework, we write all the dependencies and their versions in the pom.xml file which is a 
+configuration file just like the package.jsson file, it is very difficult for us to manage all these dependencies with their exact versions 
 -there can be compatibility issues between the versions of the different dependencies and therefore this will create issue 
 -spring boot solves this issue as we dont have to define all the dependcies and their versions 
 
@@ -69,7 +67,11 @@ to run
 -then we need to deploy this WAR file to the servlet container like tomcat where our application would run 
 -but in case of spring boot, the servlet container is embedded and we dont have to do all this for deploying the application
 
-
+so, what is spring boot? 
+-it is a framework used to create production ready applications (just like nextjs)
+-it is based on spring framework (just like nextjs is made upon nodejs)
+-it support the concept of "convention over configuration" (just like the nextjs)
+-running and deploying an application in this framework is easy as compared to others
 
 
 
