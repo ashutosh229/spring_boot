@@ -1,32 +1,6 @@
-java is an object oriented programming language 
-spring boot is a framework of java 
-spring boot also deals with the object oriented paradigm 
-while writing applications in spring boot, we create objects 
-objects are dependent on one another 
-for e.g., if we create the object for a computer, it should have the object of the desktop, keyboard, mouse, etc. 
-therefore, the computer object is dependent on these other objects
-this is called object dependency and its management is called the dependency management
-dependency management is one of the most important aspects in any object oriented application because for the application
-to work properly, it is important that the objects are well managed  
 
-manual dependency management: 
-in the manual way, the developer creates the objects manually using the new keyboard (both the independent and the dependent objects)
-injects the dependent objects into the independent object using the setter methods 
-then runs the application code where all the dependencies are now well managed and injected 
-the flow of control was from the developer who creates, injects and manages the objects, to the application which runs 
-after the process is done 
-this is called the manual control or the regular control 
 
-automatic/autoconfigured dependency management:
-this is also called the dependency injection 
-in this case, the spring framework, via configurations in the application code through annotations and all automates the  
-process of objects creation, their injection, management,etc. and the develop do not have to manage the whole thing 
-here the control is shifted from the developer to the application 
-the flow of control is that the application creates, injects and manages the objects and then developer is able to use those 
-objects in the application and run it 
-since the control flow is inverted than the manual, it is also called the inversion of control 
 
-inversion of control or IOC is one of the most important features of the spring boot framework 
 
 
 
