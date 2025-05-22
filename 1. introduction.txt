@@ -16,12 +16,22 @@ servlet mapping configures for the servlets which endpoint should be used where
 
 servlets had a lot of problems which were becoming burden in the path of web applications development
 to solve these problems, the spring framework came into the picture
-it solves some of the problems related to servlets:
+
+the spring framework solves some of the problems related to servlets:
 1. removal of the web.xml file:
 -since the file contains all the configurations regarding the application, as the application grows, the file also 
 becomes too big and difficult to maintain 
 -spring framework brings the annotations based configurations via which configurations can be done in the application 
 code itself by the different type of annotations available 
+
+2. inversion of control:
+-it is a way more flexible way to manage the object dependencies and its lifecyle
+-this is also called dependency injection 
+-without dependency injection, there arises issues of tight coupling and spring solves this issue 
+
+3. unit testing is much harder in servlets:
+-object creation depends on servlet which makes the unit testing process tough since we now cannot mock 
+-concepts like dependency injection makes life easy
 
 
 
