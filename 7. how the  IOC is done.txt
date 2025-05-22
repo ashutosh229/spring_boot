@@ -15,6 +15,10 @@ the independent objects into the dependent one
 -by writing this annotation, the IOC container gets to know, that when the application code runs, its need to automatically 
 inject the object dependcies using this setter function
 
+-@componentscan:
+-used to mention the package from which the component marked objects should be created into the spring IOC container 
+for further IOC process
+
 -@configuration:
 -we write this annotation for the class which we want to make the spring bean configuration class for the application.
 -we inject this class into the context while creating the spring IOC containe 
@@ -25,6 +29,17 @@ should be created into the IOC container
 package with the component annotation into the IOC container 
 -while creating the objects, it also looks for the dependencies and also resolves the dependencies automatically 
 using the setter function, annotated by the autowired annotation
+-since the objects are created and the dependencies are resolved, the objects are now ready to use and now we can use 
+them in the application code
+
+concept of spring boot beans:
+-since the above mentioned ready to use objects are created and managed by the spring framework, these are called the 
+spring boot beans 
+-bean is simply a java class object which the spring boot framework creates and manages for you and it is created 
+by the spring IOC container
+-there are many methods of creating beans and one of them is the component scanning mechanism which we have discussed 
+above 
+-other methods includes java configuration or writing XML files but these are not needed for now 
 
 how to create the container and ask for the creation of the independent object:
 -
