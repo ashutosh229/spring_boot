@@ -62,7 +62,12 @@ difficult for us to manage all these dependencies with their exact versions
 -in spring boot, we dont need to separately configure the dispatcherServlet, appConfig, enableWebMVC, etc. sort of 
 things and these configurations happen automatically internally by-default in case of spring boot 
 
-
+3. embedded server:
+-in case of traditional spring MVC application, we used to build manually the WAR files which is a packaged file containing 
+the application's classes, JSP pages, configuration files, dependencies and other sort of things needed for the application 
+to run 
+-then we need to deploy this WAR file to the servlet container like tomcat where our application would run 
+-but in case of spring boot, the servlet container is embedded and we dont have to do all this for deploying the application
 
 
 
