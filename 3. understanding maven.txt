@@ -12,5 +12,13 @@ before maven, we had ant
 for ant, we were supposed to tell it what to do and how to do 
 in case of maven, we just need to tell what to do, the how part is handled by the maven itself 
 
+understanding the project structure created by maven:
+done 
+
+understanding the pom.xml structure:
+
+
+
+
 
 
