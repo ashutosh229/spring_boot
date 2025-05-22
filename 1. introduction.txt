@@ -58,6 +58,10 @@ difficult for us to manage all these dependencies with their exact versions
 -there can be compatibility issues between the versions of the different dependencies and therefore this will create issue 
 -spring boot solves this issue as we dont have to define all the dependcies and their versions 
 
+2. auto configuration:
+-in spring boot, we dont need to separately configure the dispatcherServlet, appConfig, enableWebMVC, etc. sort of 
+things and these configurations happen automatically internally by-default in case of spring boot 
+
 
 
 
