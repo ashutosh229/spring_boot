@@ -30,6 +30,10 @@ also create a setter function in the dependent class for setting the independent
 -in the  application code, we create the independent and dependent objects both 
 -use the setter function for injection of the independent objects into the dependent one 
 -then since then dependency injection is done, we can now use the 
+3. constructor injection:
+-just like we are using a setter function, we can use a constructor for injecting the dependencies into the 
+independent object 
+
 
 automatic/autoconfigured dependency management:
 this is also called the dependency injection 
