@@ -23,7 +23,8 @@ to create and manage the objects and their dependencies
 -if we define and initialize the concrete implementation of the independent classes in the dependent class, 
 for the purpose of dependency management, it will not follow abstraction and follow the concreteness and therefore breaks the D rule 
 -for the D rule to follow, we need to follow abstraction rather than direct initialization as the state and therefore inject 
-the created object into the independent class object, as the state, when the object is created 
+the created object into the independent class object, as the state, when the object is created
+-this is called the dependency injection 
 
 
 manual dependency management: 
