@@ -17,27 +17,6 @@ the flow of control was from the developer who creates, injects and manages the 
 after the process is done 
 this is called the manual control or the regular control
 
-the manual dependency injection can take place in two ways:
-1. property injection: 
--the dependent objects are created and initialized as the states/properties inside the dependent class 
--in the application code, we dont need to create the independent objects and inject them manually because they are already 
-present as states 
--we can directly create the object of the dependent class and use it 
-2. setter injection:
--this is a better approach 
--here we just create the independent objects into the  dependent class and dont initialize it and 
-also create a setter function in the dependent class for setting the independent objects 
--in the  application code, we create the independent and dependent objects both 
--use the setter function for injection of the independent objects into the dependent one 
--then since then dependency injection is done, we can now use the 
-3. constructor injection:
--just like we are using a setter function, we can use a constructor for injecting the dependencies into the 
-independent object
--using this we wont be needing the autowired annotated setter functions in the component class 
-because as soon as the object is created, the dependency is injected by the constructor 
-
-
-
 automatic/autoconfigured dependency management:
 this is also called the dependency injection 
 in this case, the spring framework, via configurations in the application code through annotations and all automates the  
@@ -45,7 +24,35 @@ process of objects creation, their injection, management,etc. and the develop do
 here the control is shifted from the developer to the application 
 the flow of control is that the application creates, injects and manages the objects and then developer is able to use those 
 objects in the application and run it 
-since the control flow is inverted than the manual, it is also called the inversion of control 
+since the control flow is inverted than the manual, it is also called the inversion of control
 
 inversion of control or IOC is one of the most important features of the spring boot framework
+
+the dependency injection (manual and IOC) can take place in two ways:
+1. property injection: 
+-the dependent objects are created and initialized as the states/properties inside the dependent class 
+-in the application code, we dont need to create the independent objects and inject them manually because they are already 
+present as states 
+-we can directly create the object of the dependent class and use it 
+-while using the IOC approach, we simple define the state using the autowired annotation
+
+2. setter injection:
+-this is a better approach 
+-here we just create the independent objects into the  dependent class and dont initialize it and 
+also create a setter function in the dependent class for setting the independent objects 
+-in the  application code, we create the independent and dependent objects both 
+-use the setter function for injection of the independent objects into the dependent one 
+-then since then dependency injection is done, we can now use the 
+-while using the IOC approach, we simply using the autowired annotation for the setter method
+
+3. constructor injection:
+-just like we are using a setter function, we can use a constructor for injecting the dependencies into the 
+independent object
+-using this we wont be needing the setter functions because as soon as the object is created, the dependency is injected by the constructor
+-while using the IOC approach, we simply use the constructor as we do usually
+-we dont use any setter function then 
+-we dont put the autowired annotation for the constructor
+-we simply define the state without the autowired annotation 
+
+
 
