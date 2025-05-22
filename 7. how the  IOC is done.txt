@@ -32,6 +32,10 @@ using the setter function, annotated by the autowired annotation
 -since the objects are created and the dependencies are resolved, the objects are now ready to use and now we can use 
 them in the application code
 
+-@springbootapplication
+-we can replace the configuration and the componentscan annotation with this single annotation 
+and then the rest of the work remains the same and is done as before only
+
 concept of spring boot beans:
 -since the above mentioned ready to use objects are created and managed by the spring framework, these are called the 
 spring boot beans 

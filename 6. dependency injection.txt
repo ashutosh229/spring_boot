@@ -32,7 +32,10 @@ also create a setter function in the dependent class for setting the independent
 -then since then dependency injection is done, we can now use the 
 3. constructor injection:
 -just like we are using a setter function, we can use a constructor for injecting the dependencies into the 
-independent object 
+independent object
+-using this we wont be needing the autowired annotated setter functions in the component class 
+because as soon as the object is created, the dependency is injected by the constructor 
+
 
 
 automatic/autoconfigured dependency management:
