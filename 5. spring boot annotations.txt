@@ -26,6 +26,14 @@ if we want to convert the string type parameter in the request to some custom ob
 we need to use the PropertyEditor
 how to use the PropertyEditor? (bmp)
 
+pathvariable: used to extract the values from the path of the URL and binds to the controller method 
+same sort of type conversion occurs here 
+
+requestbody: handles the body of the request,generally in the form of json, and converts it into the java object whose class
+will be defined in the application 
+
+
+
 
 
 
