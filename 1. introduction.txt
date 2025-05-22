@@ -46,6 +46,20 @@ data access frameworks hibernate,JDBC,JPA, etc.,
 integration with async programming 
 integrations with caching, messaging, security 
 
+working of the spring framework / spring MVC : 
+bmp 
+
+pom.xml is the configuration file for the spring application, analogous to the package.json file in js applications 
+
+spring boot framework solves a lot of problems which are there in the spring mvc framework:
+1. dependency management:
+-as in the spring mvc framework, we write all the dependencies and their versions in the pom.xml file, it is very 
+difficult for us to manage all these dependencies with their exact versions 
+-there can be compatibility issues between the versions of the different dependencies and therefore this will create issue 
+-spring boot solves this issue as we dont have to define all the dependcies and their versions 
+
+
+
 
 
 
