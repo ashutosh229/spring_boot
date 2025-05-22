@@ -1,4 +1,8 @@
 there are many ways of creating a spring boot application 
-out of the ways, using the spring initializer application is the most straight forward way 
+out of the ways, using the spring initializer application is the most straight forward way
+when we create the spring boot, we have the option of using the bundler which we want to use 
+in case of js applications, we either use vite or CRA and there we can use gradle or maven or any other also 
+different bundlers provide different functionalities, usecases and etc. 
+maven is the most used and famous out of them all 
 
 the project structure for the spring boot application:
