@@ -25,7 +25,15 @@ session:(web-aware applications only)
 application:(web-aware applications only)
 -a single bean instance is shared across the entire ServletContext 
 -the bean is created once per ServletContext and shared across all requests and sessions
--ideal for application-wide shared resources 
+-ideal for application-wide shared resources
+
+websocket:(web-aware applications only)
+-a single bean instance is created for each websocket session 
+-the bean is tied to a WebSocket session and is discarded once the session ends 
+-useful for maintaining stateful interactions over WebSocket connections
+
+
+
 
 
 
