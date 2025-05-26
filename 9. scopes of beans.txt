@@ -1,6 +1,31 @@
+scope of a bean:
+-defines the lifecycle and visibility of a bean inside the application context or the IOC container 
+-these scopes defines when and how the beans are created, shared, destroyed (lifecycle)
+
 singleton:
 -the default scope for every bean created 
--one instance per spring container  
+-one instance per spring IOC container
+-container creates the bean once and returns the same instance for every subsequent request 
+-ideal for stateless beans, such as service classes 
 
 prototype:
--new instance is created every time it is requested 
+-new instance is created every time it is requested from the container 
+-suitable for stateful beans where each user or process requires a distinct instance, with a different state 
+
+request:(web-aware applications only)
+-a new bean instance is created for every HTTP request 
+-each HTTP request gets its own instance in the spring IOC container which is discarded once the request is completed 
+-useful for processing web requests where each request should be handled independently 
+
+session:(web-aware applications only)
+-a single bean instance is created for each HTTP session
+-the bean is tied to a HTTP session and is shared across multiple requests within that session 
+-suitable for storing user-specific information across multiple requests
+
+application:(web-aware applications only)
+-a single bean instance is shared across the entire ServletContext 
+-the bean is created once per ServletContext and shared across all requests and sessions
+-ideal for application-wide shared resources 
+
+
+
