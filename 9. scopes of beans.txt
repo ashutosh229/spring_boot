@@ -1,0 +1,6 @@
+singleton:
+-the default scope for every bean created 
+-one instance per spring container  
+
+prototype:
+-new instance is created every time it is requested 

@@ -1,6 +1,48 @@
-bmp because complex lag raha hain
+spring bean lifecycle:
+stage 1:
+-bean definition loads 
+-spring reads the configuration from the XML files, java annotations, java configurations to identify the bean 
+definitions
 
+stage 2:
+-bean instantiation 
+-container creates the instance for the bean 
+-creation of instance can occur via constructor or factory method 
 
+stage 3:
+-dependency injection
+-injects the dependencies into the bean 
+-sets its properties as defined in the configuration 
 
+stage 4:
+-aware interfaces invocation 
+-if the bean implements any of the following interfaces, Spring calls the corresponding methods:
+BeanNameAware: Sets the bean's name in the container.
+BeanFactoryAware: Provides access to the BeanFactory that created the bean.
+ApplicationContextAware: Provides access to the ApplicationContext.
 
+stage 5:
+-pre initialization stage 
+-spring invokes the postProcessBeforeInitialization() method of any registered BeanPostProcessor implementations 
 
+stage 6:
+-initialization stage 
+-custom initialization logic can be executed using:
+@PostConstruct annotation: Methods annotated with this are called after dependency injection is complete.
+Implementing InitializingBean interface: Defines an afterPropertiesSet() method.
+Specifying init-method in XML configuration or @Bean(initMethod = "methodName") in Java configuration.
+
+stage 7:
+-post initialization stage 
+-spring invokes the postProcessAfterInitialization() method of any registered BeanPostProcessor implementations.
+
+stage 8:
+-bean ready to use stage 
+-The bean is fully initialized and ready to be used within the application.
+
+stage 9:
+-destruction stage 
+-When the application context is closed, Spring performs cleanup/destruction using:
+@PreDestroy annotation: Methods annotated with this are called before the bean is destroyed.
+Implementing DisposableBean interface: Defines a destroy() method.
+Specifying destroy-method in XML configuration or @Bean(destroyMethod = "methodName") in Java configuration.

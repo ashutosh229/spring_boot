@@ -4,10 +4,10 @@
 2. setting up the initial spring boot project:(done)
     -understanding the layered architecture(done)
 3. understanding the maven pom.xml file (done) and maven build cycle (done)
+4. spring boot annotations (done)
+5. dependency injection and beans (done)
 
-
-4. spring boot annotations 
-5. dependency injection and beans 
+ 
 6. data access:
     -JPA
     -JDBC 
